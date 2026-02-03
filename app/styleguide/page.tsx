@@ -1,9 +1,21 @@
 import { Text } from "@/src/components/atoms/Text/text";
 import styles from "./styleguide.module.scss";
+import { Icon } from "@/src/components/atoms/icon/icon";
 
 export default function documentationComponents() {
     return (
         <div className={styles.containerstyleguide}>
+            <section>
+                <h1>Component Icon - Atom</h1>
+                <p>Component de Icon  base</p>
+                <div  className={styles.containerContentComponent}>
+                    <div className={styles.containerComponent}>
+                        <Icon size={30} icon="icon-default" />
+                    </div>
+                </div>
+            </section> 
+
+
             <section>
                 <h1>Component text - Atom</h1>
                 <p>Component de texto  base</p>
