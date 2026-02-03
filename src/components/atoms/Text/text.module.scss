@@ -1,0 +1,6 @@
+@import "@styles/variables";
+
+.text[data-pt-text-variant="primary"] {
+    color: $color-base-grey;
+    font-size: $font-size-title-h1;
+}
