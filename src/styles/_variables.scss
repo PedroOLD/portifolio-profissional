@@ -1,14 +1,45 @@
+//colors
 $color-primary: #413CCB;
 $color-secondary: #D5F08F;
 $color-white-base: #FBF7FF;
+$colod-white: #ffffff;
 $color-base-blue-dark: #2F4858;
 $color-base-grey: #797585;
 $color-base-grey-opacity: #79758540;
 $color-base-green-dark: #007689;
 $color-base-blue: #0099DE;
+
+// font-size
 $font-size-title-h1: 32px;
 $font-size-title-h2: 26px;
 $font-size-title-h3: 24px;
 $font-size-text-default: 16px;
 $font-size-text-small: 10px;
+$font-size-text-medium: 20px;
+
+// fonts family
 $font-family-nunito: "Nunito", sans-serif;
+
+// screens
+$viewer-portable-mobile: 360px;
+$viewer-portable-tablet: 768px;
+$viewer-portable-desktop: 1280px;
+
+@mixin viewer-portable-mobile {
+    @media (min-width: $viewer-portable-mobile) {
+        @content
+    }
+};
+
+@mixin viewer-portable-tablet {
+    @media (min-width: $viewer-portable-tablet) {
+        @content
+    }
+};
+
+@mixin viewer-portable-desktop {
+    @media (min-width: $viewer-portable-desktop) {
+        @content
+    }
+};
+

@@ -1,6 +1,25 @@
 @import "@styles/variables";
+@import "./mixins";
 
-.text[data-pt-text-variant="primary"] {
-    color: $color-base-grey;
-    font-size: $font-size-title-h1;
+.text[data-pt-text-variant=primary] {
+    @include defaultFont;
+
+    @include viewer-portable-tablet() {
+        @include defaultFontTablet;
+    }
+}
+
+.text[data-pt-text-variant=secondary] {
+    @include secondaryFont;
+
+    @include viewer-portable-tablet() {
+        @include secondaryFontTablet;
+    }
+}
+
+.text[data-pt-text-variant=primary][data-pt-text-title=true] {
+    @include titlePrimary;
+}
+.text[data-pt-text-variant=secondary][data-pt-text-title=true] {
+    @include titleSecondary;
 }
