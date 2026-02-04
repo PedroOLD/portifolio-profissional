@@ -1,0 +1,19 @@
+@import "@styles/variables";
+
+
+.button[data-pt-button-variant] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.button[data-pt-button-variant=primary] {
+    border: 2px solid;
+    border-image: $color-gradient-primary 1;
+}
+
+.button[data-pt-button-variant=secondary] {
+    border: 2px solid;
+    border-image: $color-gradient-secondary 1;
+}
