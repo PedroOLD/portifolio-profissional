@@ -1,0 +1,13 @@
+
+@mixin pt-styles-cta(  
+    $bg-color: $color-white-base-opacity, 
+    $color-text: $color-base-grey, 
+    $font-size: $font-size-text-small
+) {
+    padding: 1rem;
+    background-color: $bg-color;
+
+    [data-pt-text] {
+        @include text-base($color: $color-text, $size: $font-size, $weight: 600);
+    }
+}

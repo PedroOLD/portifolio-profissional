@@ -3,10 +3,27 @@ import styles from "./styleguide.module.scss";
 import { Icon } from "@/src/components/atoms/Icon/icon";
 import { Button } from "@/src/components/molecules/Button/Button";
 import { Imagept } from "@/src/components/atoms/Image/Image";
+import { CtaSelect } from "@/src/components/molecules/CtaSelect/CtaSelect";
 
 export default function documentationComponents() {
     return (
         <div className={styles.containerstyleguide}>
+            <section>
+                <h1>Component Cta select (cta) - Molecula</h1>
+                <p>Component Cta select</p>
+                <div  className={styles.containerContentComponent}>
+                    <div className={styles.containerComponent}>
+                        <h3>CtaSelect</h3>
+                        <CtaSelect isSelected={false}>Test</CtaSelect>
+                    </div>
+
+                    <div className={styles.containerComponent}>
+                        <h3>CtaSelect</h3>
+                        <CtaSelect isSelected={true}>Test</CtaSelect>
+                    </div>
+                </div>
+            </section> 
+
             <section>
                 <h1>Component Button (cta) - Molecula</h1>
                 <p>Component de Button  base</p>
