@@ -7,7 +7,7 @@ export const Text = ({
     isTitle 
 }: IText) => {
     return (
-        <p className={styles.text} data-pt-text-variant={variant} data-pt-text-title={isTitle}>
+        <p className={styles.text} data-pt-text data-pt-text-variant={variant} data-pt-text-title={isTitle}>
             {children}
         </p>
     ) 
