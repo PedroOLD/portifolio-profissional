@@ -1,0 +1,18 @@
+@import "@styles/styles.global";
+@import "./mixins";
+
+.containerCtaSelect[data-pt-cta-select] {
+    @include pt-styles-cta($padding: 1rem, $bg-color: $colo-white-base-opacity, $color-text: $color-base-grey, $font-size: $font-size-text-small);
+    
+    @include viewer-portable-tablet() {
+        @include pt-styles-cta($font-size: $font-size-text-default);
+    }
+}
+
+.containerCtaSelect[data-pt-cta-select-selected=true] {
+    @include pt-styles-cta($padding: 1rem, $bg-color: $color-secondary, $color-text: $color-base-blue-dark, $font-size: $font-size-text-small);
+
+    @include viewer-portable-tablet() {
+        @include pt-styles-cta($font-size: $font-size-text-default);
+    }
+} 
