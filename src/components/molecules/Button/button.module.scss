@@ -1,20 +1,20 @@
-@import "@styles/variables";
-@import "./mixins";
+@import  "@styles/styles.global";
 
 .button[data-pt-button-variant] {
-    @include pt-button-container-default;
+    @include flex($gap: $spacing-default);
+    cursor: pointer;
 }
 
 .button[data-pt-button-variant=primary] {
     border-image: $color-gradient-primary 1;
 
     [data-pt-text-variant] {
-        @include pt-styles-text;
-         color: $color-white;
+        @include text-base($color: $color-white ,$size: $font-size-text-small, $weight: 700);
     }
 
     [data-pt-icon] {
-        @include pt-width-icon;
+        width: 14px;
+        height: 14px;
     }
 }
 
@@ -22,11 +22,11 @@
     border-image: $color-gradient-secondary 1;
     
     [data-pt-text-variant] {
-        @include pt-styles-text;
-        color: $color-base-blue-dark;
+        @include text-base($color: $color-base-blue-dark, $size: $font-size-text-small, $weight: 700)
     }
 
     [data-pt-icon] {
-        @include pt-width-icon;
+        width: 14px;
+        height: 14px;
     }
 }

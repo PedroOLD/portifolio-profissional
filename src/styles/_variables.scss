@@ -40,22 +40,3 @@ $padding-large: 32px;
 $viewer-portable-mobile: 360px;
 $viewer-portable-tablet: 768px;
 $viewer-portable-desktop: 1280px;
-
-@mixin viewer-portable-mobile {
-    @media (min-width: $viewer-portable-mobile) {
-        @content
-    }
-};
-
-@mixin viewer-portable-tablet {
-    @media (min-width: $viewer-portable-tablet) {
-        @content
-    }
-};
-
-@mixin viewer-portable-desktop {
-    @media (min-width: $viewer-portable-desktop) {
-        @content
-    }
-};
-
