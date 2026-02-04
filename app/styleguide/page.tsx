@@ -1,7 +1,8 @@
 import { Text } from "@/src/components/atoms/Text/text";
 import styles from "./styleguide.module.scss";
-import { Icon } from "@/src/components/atoms/icon/icon";
+import { Icon } from "@/src/components/atoms/Icon/icon";
 import { Button } from "@/src/components/molecules/Button/Button";
+import { Imagept } from "@/src/components/atoms/Image/Image";
 
 export default function documentationComponents() {
     return (
@@ -28,6 +29,19 @@ export default function documentationComponents() {
                     <div className={styles.containerComponent}>
                         <h3>Button whith icon secondary</h3>
                         <Button variant="secondary" iconButton={{icon: "icon-default", size: 30}}>Test Button</Button>
+                    </div>
+                </div>
+            </section> 
+
+
+
+            <section>
+                <h1>Component Image - Atom</h1>
+                <p>Component de image</p>
+                <div  className={styles.containerContentComponent}>
+                    <div className={styles.containerComponent}>
+                        <h3>Image test with width and height</h3>
+                        <Imagept alt="imagem test" src="https://picsum.photos/id/237/200/300" width={200} height={300} />
                     </div>
                 </div>
             </section> 

@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { IIcon } from "../../atoms/icon/icon.type";
+import { IIcon } from "../../atoms/Icon/icon.type";
 
 
 export interface IButton {

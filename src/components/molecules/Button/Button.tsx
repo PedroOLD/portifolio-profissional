@@ -1,5 +1,5 @@
 import { Text } from "../../atoms/Text/text";
-import { Icon } from "../../atoms/icon/icon";
+import { Icon } from "../../atoms/Icon/icon";
 import { IButton } from "./Button.type";
 import styles from "./button.module.scss"
 

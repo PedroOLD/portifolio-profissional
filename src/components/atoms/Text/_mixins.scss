@@ -1,29 +1,4 @@
-@mixin defaultFont() {
-    color: $color-base-grey;
-    font-size: $font-size-text-default;
-}
-
-@mixin  defaultFontTablet() {
-    color: $color-base-grey;
-    font-size: $font-size-text-medium;
-}
-
-@mixin  secondaryFont() {
-    color: $colod-white;
-    font-size: $font-size-text-default;
-}
-
-@mixin  secondaryFontTablet() {
-    color: $colod-white;
-    font-size: $font-size-text-medium;
-}
-
-@mixin  titlePrimary() {
-    color: $color-base-blue-dark;
-    font-size: $font-size-title-h3;
-}
-
-@mixin  titleSecondary() {
-    color: $color-secondary;
-    font-size: $font-size-title-h1;
+@mixin text-color-size($colorUsed: $color-base-grey, $fontSize:  $font-size-text-default) {
+    color: $colorUsed;
+    font-size: $fontSize;
 }

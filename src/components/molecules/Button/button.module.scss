@@ -10,6 +10,7 @@
 
     [data-pt-text-variant] {
         @include pt-styles-text;
+         color: $color-white;
     }
 
     [data-pt-icon] {
@@ -22,6 +23,7 @@
     
     [data-pt-text-variant] {
         @include pt-styles-text;
+        color: $color-base-blue-dark;
     }
 
     [data-pt-icon] {
