@@ -2,26 +2,29 @@
 @import "./mixins";
 
 .button[data-pt-button-variant] {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+    @include pt-button-container-default;
 }
 
 .button[data-pt-button-variant=primary] {
-    @include pt-border-cta;
     border-image: $color-gradient-primary 1;
 
     [data-pt-text-variant] {
         @include pt-styles-text;
     }
+
+    [data-pt-icon] {
+        @include pt-width-icon;
+    }
 }
 
 .button[data-pt-button-variant=secondary] {
-    @include pt-border-cta;
     border-image: $color-gradient-secondary 1;
     
     [data-pt-text-variant] {
         @include pt-styles-text;
+    }
+
+    [data-pt-icon] {
+        @include pt-width-icon;
     }
 }
