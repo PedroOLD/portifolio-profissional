@@ -1,0 +1,29 @@
+@mixin  pt-button-container-default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $spacing-default;
+    cursor: pointer;
+
+    @include pt-border-cta;
+    @include pt-padding-button;
+}
+
+@mixin pt-border-cta {
+    border: 2px solid;
+}
+
+@mixin  pt-styles-text {
+    font-size: $font-size-text-small;
+    font-weight: 700;
+}
+
+@mixin pt-width-icon {
+    width: 14px;
+    height: 14px;
+}
+
+@mixin  pt-padding-button {
+    padding: $padding-small;
+}
+

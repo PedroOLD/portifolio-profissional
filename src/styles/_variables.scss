@@ -8,17 +8,33 @@ $color-base-grey: #797585;
 $color-base-grey-opacity: #79758540;
 $color-base-green-dark: #007689;
 $color-base-blue: #0099DE;
+$color-gradient-primary: linear-gradient(90deg,rgba(213, 240, 143, 1) 0%, rgba(90, 251, 217, 1) 100%);
+$color-gradient-secondary: linear-gradient(90deg,rgba(65, 60, 203, 1) 0%, rgba(0, 153, 222, 1) 100%);
 
 // font-size
 $font-size-title-h1: 32px;
 $font-size-title-h2: 26px;
 $font-size-title-h3: 24px;
 $font-size-text-default: 16px;
-$font-size-text-small: 10px;
+$font-size-text-extrasmall: 10px;
+$font-size-text-small: 14px;
 $font-size-text-medium: 20px;
 
 // fonts family
 $font-family-nunito: "Nunito", sans-serif;
+
+// spacing
+$spacing-extrasmall: 10px;
+$spacing-small: 14px;
+$spacing-default: 16px;
+$spacing-medium: 24px;
+$spacing-large: 32px;
+
+// padding
+$padding-small: 6px;
+$padding-default: 16px;
+$padding-medium: 24px;
+$padding-large: 32px;
 
 // screens
 $viewer-portable-mobile: 360px;
