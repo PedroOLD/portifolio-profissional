@@ -1,25 +1,25 @@
-@import "@styles/variables";
-@import "./mixins";
+@import "@styles/styles.global";
+
 
 .text[data-pt-text-variant=primary] {
-    @include defaultFont;
+    @include text-base($color-white, $font-size-text-small);
 
     @include viewer-portable-tablet() {
-        @include defaultFontTablet;
+        @include  text-base($font-size-text-medium, $color-base-grey);
     }
 }
 
 .text[data-pt-text-variant=secondary] {
-    @include secondaryFont;
+    @include text-base($font-size-text-medium, $color-white);
 
     @include viewer-portable-tablet() {
-        @include secondaryFontTablet;
+        @include text-base($font-size-text-medium, $color-white);
     }
 }
 
 .text[data-pt-text-variant=primary][data-pt-text-title=true] {
-    @include titlePrimary;
+    @include text-base($font-size-title-h3, $color-base-blue-dark );
 }
 .text[data-pt-text-variant=secondary][data-pt-text-title=true] {
-    @include titleSecondary;
+    @include text-base( $font-size-title-h1, $color-secondary);
 }

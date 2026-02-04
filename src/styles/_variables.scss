@@ -2,7 +2,7 @@
 $color-primary: #413CCB;
 $color-secondary: #D5F08F;
 $color-white-base: #FBF7FF;
-$colod-white: #ffffff;
+$color-white: #ffffff;
 $color-base-blue-dark: #2F4858;
 $color-base-grey: #797585;
 $color-base-grey-opacity: #79758540;
@@ -40,22 +40,3 @@ $padding-large: 32px;
 $viewer-portable-mobile: 360px;
 $viewer-portable-tablet: 768px;
 $viewer-portable-desktop: 1280px;
-
-@mixin viewer-portable-mobile {
-    @media (min-width: $viewer-portable-mobile) {
-        @content
-    }
-};
-
-@mixin viewer-portable-tablet {
-    @media (min-width: $viewer-portable-tablet) {
-        @content
-    }
-};
-
-@mixin viewer-portable-desktop {
-    @media (min-width: $viewer-portable-desktop) {
-        @content
-    }
-};
-

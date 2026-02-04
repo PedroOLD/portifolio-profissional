@@ -1,0 +1,33 @@
+@mixin flex($dir: row, $align: center, $justify: center, $gap: 8px) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+}
+
+@mixin  text-base($size: 1rem, $color: #000, $family: "Nunito", $weight: 400) { 
+    color: $color;
+    font-size: $size;
+    font-family: $family sans-serif;
+    font-weight: $weight;
+}
+
+
+@mixin viewer-portable-mobile {
+    @media (min-width: $viewer-portable-mobile) {
+        @content
+    }
+};
+
+@mixin viewer-portable-tablet {
+    @media (min-width: $viewer-portable-tablet) {
+        @content
+    }
+};
+
+@mixin viewer-portable-desktop {
+    @media (min-width: $viewer-portable-desktop) {
+        @content
+    }
+};
