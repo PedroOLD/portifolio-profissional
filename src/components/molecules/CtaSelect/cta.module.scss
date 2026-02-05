@@ -11,4 +11,6 @@
 
 .containerCtaSelect[data-pt-cta-select-selected=true] {
     @include pt-styles-cta($bg-color: $color-secondary, $color-text: $color-base-blue-dark);
+    border-bottom: 2px solid $color-base-blue-dark;
+    box-sizing: border-box;
 } 

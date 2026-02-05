@@ -4,10 +4,34 @@ import { Icon } from "@/src/components/atoms/Icon/icon";
 import { Button } from "@/src/components/molecules/Button/Button";
 import { Imagept } from "@/src/components/atoms/Image/Image";
 import { CtaSelect } from "@/src/components/molecules/CtaSelect/CtaSelect";
+import { SelectExperince } from "@/src/components/organisms/SelectExperience";
+import { IExperince } from "@/src/components/organisms/SelectExperince.type";
+
+const mockedSelecExperience: IExperince[] = [
+    {
+        buttonTitle: "Corebiz",
+        dataInital: "20/01/2026",
+        dataEnd: "01/01/2028",
+        description: "fiz isso isso e isso",
+        enterprise: "Corebiz",
+        position: "Frontend develop"
+    }
+]
 
 export default function documentationComponents() {
     return (
         <div className={styles.containerstyleguide}>
+            <section>
+                <h1>Component Select Experince - Organismo</h1>
+                <p>Experince</p>
+                <div  className={styles.containerContentComponent}>
+                    <div className={styles.containerComponent}>
+                        <h3>Select Experince</h3>
+                        <SelectExperince experience={mockedSelecExperience} />
+                    </div>
+                </div>
+            </section>
+
             <section>
                 <h1>Component Cta select (cta) - Molecula</h1>
                 <p>Component Cta select</p>
