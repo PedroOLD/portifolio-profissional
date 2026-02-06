@@ -1,5 +1,6 @@
+import { ICtaSelect } from "../molecules/CtaSelect/CtaSelect.type";
 
-export interface IExperince {
+export interface IExperience {
     buttonTitle: string;
     position: string,
     dataInital: string;
@@ -8,6 +9,7 @@ export interface IExperince {
     description: string; 
 }
 
-export interface ISelectExperince {
-    experience: IExperince[];
+export interface ISelectExperience {
+    experience: IExperience[];
+    title: string;
 }
