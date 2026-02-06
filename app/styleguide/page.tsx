@@ -5,11 +5,27 @@ import { Button } from "@/src/components/molecules/Button/Button";
 import { Imagept } from "@/src/components/atoms/Image/Image";
 import { CtaSelect } from "@/src/components/molecules/CtaSelect/CtaSelect";
 import { SelectExperince } from "@/src/components/organisms/SelectExperience";
-import { IExperince } from "@/src/components/organisms/SelectExperince.type";
+import { IExperience } from "@/src/components/organisms/SelectExperince.type";
 
-const mockedSelecExperience: IExperince[] = [
+const mockedSelecExperience: IExperience[] = [
     {
         buttonTitle: "Corebiz",
+        dataInital: "20/01/2026",
+        dataEnd: "01/01/2028",
+        description: "fiz isso isso e isso",
+        enterprise: "Corebiz",
+        position: "Frontend develop"
+    },
+    {
+        buttonTitle: "Whirpool",
+        dataInital: "20/01/2026",
+        dataEnd: "01/01/2028",
+        description: "fiz isso isso e isso",
+        enterprise: "Corebiz",
+        position: "Frontend develop"
+    },
+    {
+        buttonTitle: "Hibrido",
         dataInital: "20/01/2026",
         dataEnd: "01/01/2028",
         description: "fiz isso isso e isso",

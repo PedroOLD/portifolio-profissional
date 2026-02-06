@@ -9,5 +9,6 @@
 
     [data-pt-text] {
         @include text-base($color: $color-text, $size: $font-size, $weight: 600);
+        pointer-events: none;
     }
 }
